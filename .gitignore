@@ -1,0 +1,45 @@
+# Node.js backend
+voicebridge-backend/node_modules/
+voicebridge-backend/.env
+
+# Flutter
+voicebridge/.env
+voicebridge/build/
+voicebridge/.dart_tool/
+voicebridge/.flutter-plugins
+voicebridge/.flutter-plugins-dependencies
+voicebridge/.packages
+
+# Android
+voicebridge/android/.gradle/
+voicebridge/android/local.properties
+voicebridge/android/app/debug/
+voicebridge/android/app/profile/
+voicebridge/android/app/release/
+**/build/
+
+# iOS
+voicebridge/ios/Pods/
+voicebridge/ios/.symlinks/
+
+# Ollama models (très volumineux)
+*.gguf
+*.bin
+models/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.idea/
+.vscode/settings.json
+*.suo
+*.user
+
+*.so
+*.apk
+*.bin
+
+"**/build/`n*.so`n*.apk`n*.bin`n.dart_tool/`n.packages" | Out-File -FilePath .gitignore -Encoding utf8
